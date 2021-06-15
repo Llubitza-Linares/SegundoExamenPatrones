@@ -1,12 +1,12 @@
 package Strategy;
 
-public class Usuario {
+public class Usuarios {
     private int ci;
     private String nombre;
     private int fechaDeNacimiento;
     private String profesion;
 
-    public Usuario(int ci, String nombre, int fechaNacimiento, String profesion) {
+    public Usuarios(int ci, String nombre, int fechaNacimiento, String profesion) {
         super();
         this.ci = ci;
         this.nombre = nombre;

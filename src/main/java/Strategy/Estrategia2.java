@@ -6,17 +6,17 @@ import java.util.List;
 public class Estrategia2 implements IOrdenamiento {
 
     @Override
-    public void ordenar(List<Usuario> usuarios) {
+    public void ordenar(List<Usuarios> usuarios) {
         System.out.println("*************************Ordenando por nombre: ");
-        List<Usuario> ordenado = new LinkedList<Usuario>();
-        for (Usuario usuario : ordenado) {
+        List<Usuarios> ordenado = new LinkedList<Usuarios>();
+        for (Usuarios usuario : ordenado) {
             ordenado.add(usuario);
         }
         char menor = 'z';
         while (ordenado.size() != usuarios.size()) {
             menor = 'z';
-            Usuario uMenor = null;
-            for (Usuario usuario : usuarios) {
+            Usuarios uMenor = null;
+            for (Usuarios usuario : usuarios) {
                 if (usuario.getNombre().charAt(0) < menor && !ordenado.contains(usuario)) {
                     menor = usuario.getNombre().charAt(0);
                     uMenor = usuario;
@@ -24,7 +24,7 @@ public class Estrategia2 implements IOrdenamiento {
             }
             ordenado.add(uMenor);
         }
-        for (Usuario usuario : ordenado) {
+        for (Usuarios usuario : ordenado) {
             usuario.showInfo();
         }
     }

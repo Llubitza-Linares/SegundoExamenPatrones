@@ -1,16 +1,19 @@
 package Strategy;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Estrategia1 implements IOrdenamiento {
 
     @Override
-    public void ordenar(List<Usuario> usuarios) {
+    public void ordenar(List<Usuarios> usuarios) {
         System.out.println("********************Ordenando por ci: ");
-        List<Usuario> ordenado = new LinkedList<Usuario>();
+        List<Usuarios> ordenado = new LinkedList<Usuarios>();
         int menor = Integer.MAX_VALUE;
         while (ordenado.size() != usuarios.size()) {
             menor = Integer.MAX_VALUE;
-            Usuario uMenor = null;
-            for (Usuario usuario : usuarios) {
+            Usuarios uMenor = null;
+            for (Usuarios usuario : usuarios) {
                 if (usuario.getCi() < menor && !ordenado.contains(usuario)) {
                     menor = usuario.getCi();
                     uMenor = usuario;
@@ -18,7 +21,7 @@ public class Estrategia1 implements IOrdenamiento {
             }
             ordenado.add(uMenor);
         }
-        for (Usuario usuario : ordenado) {
+        for (Usuarios usuario : ordenado) {
             usuario.showInfo();
         }
     }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BaseDeDatos {
     private IOrdenamiento ordenamiento;
-    private List<Usuario> usuarios = new LinkedList<Usuario>();
+    private List<Usuarios> usuarios = new LinkedList<Usuarios>();
 
     public IOrdenamiento getOrdenamiento() {
         return ordenamiento;
@@ -15,11 +15,11 @@ public class BaseDeDatos {
         this.ordenamiento = ordenamiento;
     }
 
-    public List<Usuario> getUsuarios() {
+    public List<Usuarios> getUsuarios() {
         return usuarios;
     }
 
-    public void setUsuarios(List<Usuario> usuarios) {
+    public void setUsuarios(List<Usuarios> usuarios) {
         this.usuarios = usuarios;
     }
 

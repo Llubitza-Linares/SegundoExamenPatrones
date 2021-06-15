@@ -11,13 +11,13 @@ public class Cliente {
         Estrategia2 estrategia2 = new Estrategia2();
         Estrategia3 estrategia3 = new Estrategia3();
 
-        Usuario usuario1 = new Usuario(654516321, "Adrian", 2000, "Administrador");
-        Usuario usuario2 = new Usuario(656554651, "Juan", 2004, "Contador");
-        Usuario usuario3 = new Usuario(846518436, "Camila", 1999, "Programador");
-        Usuario usuario4 = new Usuario(654654465, "Alejandra", 2003, "Policia");
-        Usuario usuario5 = new Usuario(564641214, "Natalia", 2005, "Medico");
+        Usuarios usuario1 = new Usuarios(654516321, "Adrian", 2000, "Administrador");
+        Usuarios usuario2 = new Usuarios(656554651, "Juan", 2004, "Contador");
+        Usuarios usuario3 = new Usuarios(846518436, "Camila", 1999, "Programador");
+        Usuarios usuario4 = new Usuarios(654654465, "Alejandra", 2003, "Policia");
+        Usuarios usuario5 = new Usuarios(564641214, "Natalia", 2005, "Medico");
 
-        List<Usuario> usuarios = new LinkedList<Usuario>();
+        List<Usuarios> usuarios = new LinkedList<Usuarios>();
 
         usuarios.add(usuario1);
         usuarios.add(usuario2);

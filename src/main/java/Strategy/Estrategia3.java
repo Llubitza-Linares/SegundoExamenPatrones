@@ -6,17 +6,17 @@ import java.util.List;
 public class Estrategia3 implements IOrdenamiento {
 
     @Override
-    public void ordenar(List<Usuario> usuarios) {
+    public void ordenar(List<Usuarios> usuarios) {
         System.out.println("******************************Ordenando por profesión o fecha de nacimientos: ");
-        List<Usuario> ordenadoProfesion = new LinkedList<Usuario>();
-        for (Usuario usuario : ordenadoProfesion) {
+        List<Usuarios> ordenadoProfesion = new LinkedList<Usuarios>();
+        for (Usuarios usuario : ordenadoProfesion) {
             ordenadoProfesion.add(usuario);
         }
         char menor = 'z';
         while (ordenadoProfesion.size() != usuarios.size()) {
             menor = 'z';
-            Usuario uMenor = null;
-            for (Usuario usuario : usuarios) {
+            Usuarios uMenor = null;
+            for (Usuarios usuario : usuarios) {
 
                 if (usuario.getProfesion().charAt(0) < menor && !ordenadoProfesion.contains(usuario)) {
                     menor = usuario.getProfesion().charAt(0);
@@ -33,12 +33,12 @@ public class Estrategia3 implements IOrdenamiento {
                         && ordenadoProfesion.get(i).getFechaNacimiento() < ordenadoProfesion.get(i - 1)
                         .getFechaNacimiento()) {
                     ordenado=false;
-                    Usuario u = ordenadoProfesion.remove(i);
-                    ordenadoProfesion.add(i + 1, u);
+                    Usuarios usuarios1 = ordenadoProfesion.remove(i);
+                    ordenadoProfesion.add(i + 1, usuarios1);
                 }
             }
         }
-        for (Usuario usuario : ordenadoProfesion) {
+        for (Usuarios usuario : ordenadoProfesion) {
             usuario.showInfo();
         }
     }
