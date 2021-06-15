@@ -8,7 +8,8 @@ public class Persona {
     }
 
     public void info(){
-        System.out.println("Nombre: " + name);
+        System.out.println("Nombre: ");
+        System.out.println(name);
     }
 
     public String getName() {

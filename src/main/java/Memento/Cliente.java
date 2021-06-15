@@ -10,15 +10,15 @@ public class Cliente {
         versionamiento.setState(archivo);
         version.addArchivo(versionamiento.createVersion());
 
-        Archivo archivo = new Archivo("El exito solo depende de tu esfuerxo");
+        Archivo archivo2 = new Archivo("El exito solo depende de tu esfuerxo");
         versionamiento.setState(archivo);
         version.addArchivo(versionamiento.createVersion());
 
-        Archivo archivo = new Archivo("Prologo");
+        Archivo archivo3 = new Archivo("Prologo");
         versionamiento.setState(archivo);
         version.addArchivo(versionamiento.createVersion());
 
-        Archivo archivo = new Archivo("Este documneot fue actualizado");
+        Archivo archivo4 = new Archivo("Este documneot fue actualizado");
         versionamiento.setState(archivo);
         version.addArchivo(versionamiento.createVersion());
 

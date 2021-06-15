@@ -5,11 +5,11 @@ public class Cliente {
 
         Publicaciones publicaciones = new Publicaciones();
 
-        Usuarios usuario1 =new Usuarios(new Persona("Teresa"), "Video");
-        Usuarios usuario2 =new Usuarios(new Persona( "Romina"), "Imagen");
-        Usuarios usuario3 =new Usuarios(new Persona("Emilia"), "Video");
-        Usuarios usuario4 =new Usuarios(new Persona("Lara"), "Video");
-        Usuarios usuario5 =new Usuarios(new Persona("Camila"), "Imagen");
+        Usuario usuario1 =new Usuario(new Persona("Teresa"), "Video");
+        Usuario usuario2 =new Usuario(new Persona( "Romina"), "Imagen");
+        Usuario usuario3 =new Usuario(new Persona("Emilia"), "Video");
+        Usuario usuario4 =new Usuario(new Persona("Lara"), "Video");
+        Usuario usuario5 =new Usuario(new Persona("Camila"), "Imagen");
 
         publicaciones.attach(usuario1);
         publicaciones.attach(usuario2);
